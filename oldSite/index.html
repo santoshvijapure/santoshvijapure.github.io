@@ -1,0 +1,131 @@
+<!--     html code   -->
+<html>
+<!-- yfhjdsvfkhsdbf -->
+<head>
+    <!--                                    JavaScripts                                        -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <!--                                    stylesheets                                         -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Santosh vijapure </title>
+    <!-- this is script for smooth scroll -->
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="pageOne text-center">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="#p3" >Santosh Vijapure</a>
+            </li>
+            <li class="pull-right">
+                <a href="#p2">About me</a>
+
+        </ul>
+
+        <div class="block text-center">
+            <h2 class="block">Santosh Vijapure
+                <h2>
+        </div>
+
+        <div class="btnList text-center">
+            <a class="btn btn-default" href="https://facebook.com/Santoshkumar.vijapure"><i class="fa fa-facebook fa-lg" ></i>Facebook</a>
+            <a class="btn btn-default" href="https://twitter.com/Vijapure_h"><i class="fa fa-twitter fa-lg" ></i>Twitter</a>
+            <a class="btn btn-default" href="https://github.com/santosh62"><i class="fa fa-github fa-lg"></i>GitHub</a>
+            <a class="btn btn-default" href="https://www.linkedin.com/in/Santosh-vijapure"><i class="fa fa-linkedin-square fa-lg"></i>Linkedin</a>
+            <a class="btn btn-default" href="mailto:vijapuresantosh@gmail.com"><i class="fa fa-google fa-lg"></i>Mails</a>
+
+        </div>
+        <marquee class="pad" direction="right">
+            <a href="https://twitter.com/Vijapure_h" target="blank"><img src="https://s20.postimg.cc/fiw9w7uv1/Ux_OX6_FP.gif"></img>
+            </a>
+        </marquee>
+    </div>
+    <!-- End of Page 1 -->
+    <div class="pageTwo container" id="p2">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="block2 text-center">
+                    <h2>Santosh Vijapure</h2>
+
+                </div style="font-size:10px;">
+                <p>I'm a self taught web designer, developer based in India. I'm currently part of a small web development team in an upcoming start-up, building web and mobile applications. My passion is to use technology based
+                    solutions, to help solve real world challenges.</br>
+                    <b>Languages and Frameworks:</b> Javascript, HTML5, CSS3, jQuery, Bootstrap3</br>
+                    <b>Tools & expertise:</b> Git, Responsive Web Design,Android Development, Agile Methodologies
+
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <div class="paddingTop paddingImg">
+                    <IMG class="larger-image me medium-image" SRC="images/profile.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Page 2 -->
+    <div class="pageThree text-center" id="p3">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Contact Me <a class="block" href="mailto:Vijapuresantosh@gmail.com">vijapureSantosh@gmail.com</a></h2>
+
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-default paddingBTN" href="#">
+                Twitter
+                  </a>
+                <br/>
+                <a class="btn btn-default paddingBTN" href=#>
+                   GitHub
+                </a>
+                <br/>
+                <a class="btn btn-default paddingBTN" href="#">
+                   Linkedin
+                </a>
+                <br/>
+                <a class="btn btn-default paddingBTN" href="#">
+                    <i=>
+                        FaceBook
+                </a>
+                <br/>
+                <a class="btn btn-default paddingBTN" href="images/1.pdf">
+                    <i=>
+                        Resume
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
