@@ -21,3 +21,11 @@ $(function(){
       });
       
 });
+
+
+const data =fetch('https://api.github.com/users/santoshvijapure/repos').then(function () { 
+console.log(data);
+
+})
+
+// const data=fetch('https://api.github.com/users/santoshvijapure/repos').then((resp) => resp.json())
