@@ -1,4 +1,4 @@
-alert(" This site is under development see the footer to visit OLD site.")  
+// alert(" This site is under development see the footer to visit OLD site.")  
 $(function(){
     
     $('#typewriteText').typewrite({
@@ -25,7 +25,6 @@ $(function(){
 
 const data =fetch('https://api.github.com/users/santoshvijapure/repos').then(function () { 
 console.log(data);
-
 })
 
 // const data=fetch('https://api.github.com/users/santoshvijapure/repos').then((resp) => resp.json())
