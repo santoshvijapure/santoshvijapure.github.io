@@ -23,12 +23,12 @@ $(function(){
 });
 
 
-var data =fetch('https://api.github.com/users/santoshvijapure/repos').then(function () { 
-console.log(data);
-// var data1= JSON.stringify(data);
-var data2 = JSON.parse(data);
-console.log(data2)
+// var data =fetch('https://api.github.com/users/santoshvijapure/repos').then(function () { 
+// console.log(data);
+// // var data1= JSON.stringify(data);
+// var data2 = JSON.parse(data);
+// console.log(data2)
 
-})
+// })
 
-// const data=fetch('https://api.github.com/users/santoshvijapure/repos').then((resp) => resp.json())
+// // const data=fetch('https://api.github.com/users/santoshvijapure/repos').then((resp) => resp.json())
