@@ -1,4 +1,4 @@
-// alert(" This site is under development see the footer to visit OLD site.")  
+alert(" This site is under development see the footer to visit OLD site.")  
 $(function(){
     
     $('#typewriteText').typewrite({
@@ -21,14 +21,10 @@ $(function(){
       });
       
 });
+function xD() {
+  alert("comming sooon !!!! :)")
+}
 
-
-// var data =fetch('https://api.github.com/users/santoshvijapure/repos').then(function () { 
-// console.log(data);
-// // var data1= JSON.stringify(data);
-// var data2 = JSON.parse(data);
-// console.log(data2)
-
-// })
-
-// // const data=fetch('https://api.github.com/users/santoshvijapure/repos').then((resp) => resp.json())
+var url ="https://api.github.com/users/santoshvijapure/repos";
+var x= $.getJSON(url);
+console.log(x.responseJSON);
