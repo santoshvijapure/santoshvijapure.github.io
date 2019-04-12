@@ -1,0 +1,26 @@
+/* navbar styeles  */
+
+nav{
+    /* height : 1.5em !important; */
+}
+.active{
+        border-bottom: 3px solid yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer style  */
+footer{
+    background: black;
+    color: white;
+}

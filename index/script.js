@@ -1,4 +1,4 @@
-alert(" This site is under development see the footer to visit OLD site.")  
+// alert(" This site is under development see the footer to visit OLD site.")  
 $(function(){
     
     $('#typewriteText').typewrite({
@@ -28,3 +28,4 @@ function xD() {
 var url ="https://api.github.com/users/santoshvijapure/repos";
 var x= $.getJSON(url);
 console.log(x.responseJSON);
+
