@@ -1,3 +1,10 @@
+
+
+/* smooth scroll  */
+html {
+    scroll-behavior: smooth;
+  }
+
 /* navbar styeles  */
 
 nav{
