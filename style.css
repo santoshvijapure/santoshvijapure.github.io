@@ -3,29 +3,22 @@
 /* smooth scroll  */
 html {
     scroll-behavior: smooth;
-  }
+}
+
+
+nav a .navbar-brand{
+    color: white !important;
+}
+
+  body{
+      margin-top: 60px;
+    }
 
 /* navbar styeles  */
 
-nav{
-    /* height : 1.5em !important; */
-}
 .active{
         border-bottom: 3px solid yellow;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer style  */
 footer{
     background: black;

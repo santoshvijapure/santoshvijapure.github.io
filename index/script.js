@@ -25,7 +25,3 @@ function xD() {
   alert("comming sooon !!!! :)")
 }
 
-var url ="https://api.github.com/users/santoshvijapure/repos";
-var x= $.getJSON(url);
-console.log(x.responseJSON);
-

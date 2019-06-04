@@ -1,3 +1,4 @@
+// smooth scroll
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -8,6 +9,6 @@ $(document).ready(function(){
       }, 800, function(){
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
