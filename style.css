@@ -30,12 +30,15 @@ footer{
   margin: 5px;
   }  
 
-  i{
-      transition: transform .6s;
+  #social i{
+      transition: transform 1s;
   
   }
-  i:hover {
-      transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+ #social i:hover {
+      /* transform: rotateY(15rem); */
+
+      transform: translateY(-10px) translateX(5px) scale(1.3)  rotate(360deg);
+      /* transform: scale(1.3);  */
+    }
 
   
