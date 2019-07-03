@@ -1,3 +1,5 @@
+document.body.requestFullscreen();
+
 // smooth scroll
 $(document).ready(function(){
   $("a").on('click', function(event) {
