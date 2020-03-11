@@ -1,4 +1,4 @@
-document.documentElement.requestFullscreen();
+
 
 // smooth scroll
 $(document).ready(function(){
