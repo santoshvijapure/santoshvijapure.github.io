@@ -1,111 +1,105 @@
-    
-.active{
-    border-bottom: 3px solid yellow;
+.active {
+	border-bottom: 3px solid yellow;
 }
-.pageOne{
-   height: 100vh;
-   padding-top: 50px;  
+.pageOne {
+	height: 100vh;
+	padding-top: 50px;
 }
-.my-img{
-    /* padding-top: 10%; */
-    transition: transform .6s !important;
+.my-img {
+	/* padding-top: 10%; */
+	transition: transform .6s !important;
 }
 .my-img :hover {
-    transform: scale(1.3) !important;     
+	transform: scale(1.3) !important;
 }
 
 /* card  */
 .card {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  pre{
-      /* background: black;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.card:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+pre {
+	/* background: black;
       color: white; */
-      font-size:1.3em;
-      padding: 40px 0;
-      margin:0;
-      background: black !important; color: white !important;
+	font-size: 1.3em;
+	padding: 40px 0;
+	margin: 0;
+	background: black !important;
+	color: white !important;
 
-      /* width: 300px; */
-      padding: auto;
-  }
+	/* width: 300px; */
+	padding: auto;
+}
 
-  pre{
-      background: black;
-      color: green;
-  }
+pre {
+	background: black;
+	color: green;
+}
 
-  /* progress bar css  */
-  
+/* progress bar css  */
+
 .tools_expert {
-    box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
-    padding: 50px 35px; 
+	box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+	padding: 50px 35px;
 }
 .tools_expert h3 {
-      color: #222222;
-      font-size: 21px;
-      text-transform: uppercase; 
-}   
-      .tools_expert .skill_main .skill_item h4 {
-        text-align: right;
-        font-size: 14px;
-        font-family: "Roboto", sans-serif;
-        font-weight: normal;
-        color: #777777;
-        margin-bottom: 15px; 
-    }
-      .tools_expert .skill_main .skill_item .progress {
-        height: 20px;
-        border-radius: 10px;
-        background: transparent;
-        border: 1px solid #eeeeee;
-        padding-left: 5px;
-        padding-right: 5px;
-        box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2);
-     }
-        .tools_expert .skill_main .skill_item .progress .progress-bar {
-          /* width: 0%; */
-          /* transition: width .6s ease; */
-          height: 10px;
-          border-radius: 5px;
-          background-color: #fbb034;
-          background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
-          background-image: -moz-linear-gradient(0deg, #fbb034 0%, #ffdd00 100%);
-          background-image: -ms-linear-gradient(0deg, #fbb034 0%, #ffdd00 100%);
-            /* for blue color gredient   
+	color: #222222;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+.tools_expert .skill_main .skill_item h4 {
+	text-align: right;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	color: #777777;
+	margin-bottom: 15px;
+}
+.tools_expert .skill_main .skill_item .progress {
+	height: 20px;
+	border-radius: 10px;
+	background: transparent;
+	border: 1px solid #eeeeee;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2);
+}
+.tools_expert .skill_main .skill_item .progress .progress-bar {
+	/* width: 0%; */
+	/* transition: width .6s ease; */
+	height: 10px;
+	border-radius: 5px;
+	background-color: #fbb034;
+	background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+	background-image: -moz-linear-gradient(0deg, #fbb034 0%, #ffdd00 100%);
+	background-image: -ms-linear-gradient(0deg, #fbb034 0%, #ffdd00 100%);
+	/* for blue color gredient   
             background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
              background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); 
             background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);*/
-          }
-        
-
-        .tools_expert {
-            margin-top: 50px;
-        }  
-.progress-bar{
-    margin:4;
-}
-.progress
-{
-    height: 100% !important;
-padding: 4px !important;
 }
 
-
-
-
-.work-card{
-  margin: 10px;
-  margin-top: 30px;
-  padding: 20px;
-  box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2);
-  height: 300px;
-  text-align: center;
+.tools_expert {
+	margin-top: 50px;
 }
- 
+.progress-bar {
+	margin: 4;
+}
+.progress {
+	/* height: 100% !important; */
+	padding: 4px !important;
+}
+
+.work-card {
+	margin: 10px;
+	margin-top: 30px;
+	padding: 20px;
+	box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2);
+	height: 300px;
+	text-align: center;
+}
