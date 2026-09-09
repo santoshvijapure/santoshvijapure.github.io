@@ -700,9 +700,11 @@ body {
 }
 
 #arcadeCanvas,
-#snakeCanvas {
+#snakeCanvas,
+#balloonCanvas,
+#dinoCanvas {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   height: auto;
   display: block;
 }
@@ -907,6 +909,36 @@ body {
   max-width: 520px !important;
   transform: scale(1.1) !important;
   margin: auto !important;
+}
+
+/* Balloon Pop in Fullscreen */
+.arcade-cabinet-frame.is-fullscreen #balloonCanvas,
+.arcade-cabinet-frame:fullscreen #balloonCanvas,
+:fullscreen #balloonCanvas {
+  max-width: 95vw !important;
+  max-height: 94vh !important;
+  height: 94vh !important;
+  width: auto !important;
+  aspect-ratio: 600 / 650 !important;
+  object-fit: contain !important;
+  margin: auto !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 50px rgba(236, 72, 153, 0.45) !important;
+}
+
+/* Dino Jump in Fullscreen */
+.arcade-cabinet-frame.is-fullscreen #dinoCanvas,
+.arcade-cabinet-frame:fullscreen #dinoCanvas,
+:fullscreen #dinoCanvas {
+  max-width: 95vw !important;
+  max-height: 88vh !important;
+  height: auto !important;
+  width: 90vw !important;
+  aspect-ratio: 700 / 450 !important;
+  object-fit: contain !important;
+  margin: auto !important;
+  border-radius: 14px !important;
+  box-shadow: 0 0 50px rgba(34, 197, 94, 0.45) !important;
 }
 
 /* Scanlines adjustment in fullscreen */

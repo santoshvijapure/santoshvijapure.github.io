@@ -53,7 +53,7 @@ window.GameLibrary = function ({ onSelectGame, onNavigatePortfolio }) {
           React.createElement(
             'div',
             { className: 'stat-pill' },
-            React.createElement('strong', null, '3'),
+            React.createElement('strong', null, games.filter((g) => g.status === 'playable').length.toString()),
             ' Playable Games'
           ),
           React.createElement(

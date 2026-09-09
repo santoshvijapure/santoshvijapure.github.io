@@ -31,6 +31,14 @@ window.GamePlayer = function ({ gameId, onBack }) {
       gameInstanceRef.current = window.createDev2048Game('dev2048Mount', (newScore) => {
         setScore(newScore);
       });
+    } else if (gameId === 'balloon-pop' && window.createBalloonPopGame) {
+      gameInstanceRef.current = window.createBalloonPopGame('balloonCanvas', (newScore) => {
+        setScore(newScore);
+      });
+    } else if (gameId === 'dino-jump' && window.createDinoJumpGame) {
+      gameInstanceRef.current = window.createDinoJumpGame('dinoCanvas', (newScore) => {
+        setScore(newScore);
+      });
     }
 
     return () => {
@@ -190,7 +198,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
             React.createElement('span', { style: { marginRight: '5px' } }, isFullscreen ? '✕' : '⛶'),
             isFullscreen ? 'Exit Fullscreen' : 'Full Screen'
           ),
-          gameId === 'code-defender' &&
+          (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump') &&
             React.createElement(
               'button',
               { className: 'btn btn-ghost btn-sm', onClick: handleToggleSound },
@@ -216,7 +224,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
           React.createElement(
             'div',
             { className: 'floating-fs-toolbar' },
-            gameId === 'code-defender' &&
+            (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump') &&
               React.createElement(
                 'button',
                 {
@@ -263,7 +271,11 @@ window.GamePlayer = function ({ gameId, onBack }) {
           gameId === 'dev-snake' &&
             React.createElement('canvas', { id: 'snakeCanvas' }),
           gameId === 'dev-2048' &&
-            React.createElement('div', { id: 'dev2048Mount' })
+            React.createElement('div', { id: 'dev2048Mount' }),
+          gameId === 'balloon-pop' &&
+            React.createElement('canvas', { id: 'balloonCanvas' }),
+          gameId === 'dino-jump' &&
+            React.createElement('canvas', { id: 'dinoCanvas' })
         ),
 
         // Virtual Touch Controls

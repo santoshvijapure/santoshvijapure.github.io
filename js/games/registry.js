@@ -62,6 +62,34 @@ window.GAMES_REGISTRY = [
     description: 'A developer twist on 2048. Slide and merge matching branches: 2 (git init) + 2 = 4 (Commit) &rarr; 8 (Branch) &rarr; 16 (Pull Request) &rarr; ... &rarr; 2048 (Production Deploy)!'
   },
   {
+    id: 'balloon-pop',
+    title: 'Balloon Pop Blitz',
+    category: 'kids',
+    badge: 'Kids Favorite',
+    tagline: 'Pop colorful floating balloons, collect golden stars, and unleash rainbow confetti bursts!',
+    icon: '🎈',
+    difficulty: 'Kids / Easy',
+    status: 'playable',
+    rating: '5.0 ★',
+    tags: ['Kids', 'Touch Friendly', 'Sound Effects', 'Confetti', 'Endless Fun'],
+    controls: 'Desktop: Click balloons to pop! Mobile/Tablet: Tap with fingers (Multi-touch support).',
+    description: 'A cheerful balloon popping game designed for kids of all ages! Colorful balloons float gracefully into the sky. Tap or click them to pop with realistic rubber pop sounds, sparkles, and cascading confetti bursts. Features Zen Free-Pop mode and 60-Second Star Blitz!'
+  },
+  {
+    id: 'dino-jump',
+    title: 'Dino Jump: Candy Valley',
+    category: 'kids',
+    badge: 'Kids Runner',
+    tagline: 'Help baby Dino leap across Candy Valley, jump over sweets, and collect golden star treats!',
+    icon: '🦖',
+    difficulty: 'Kids / Easy',
+    status: 'playable',
+    rating: '4.9 ★',
+    tags: ['Kids Runner', 'One-Touch Jump', 'Double Jump', 'Charming', 'Side-Scroller'],
+    controls: 'Desktop: [Spacebar], [Up Arrow], or Click to Jump. Tap again in mid-air to Double Jump!',
+    description: 'A delightful endless runner where an adorable baby Dino dashes through magical Candy Valley under cheerful skies. Jump over cupcakes and mushrooms while collecting golden stars. Includes an instant acrobatic double-jump and bouncy audio chimes!'
+  },
+  {
     id: 'regex-racer',
     title: 'Regex Racer',
     category: 'puzzle',
@@ -107,6 +135,7 @@ window.GAMES_REGISTRY = [
 
 window.GAME_CATEGORIES = [
   { id: 'all', label: 'All Games', icon: '🎮' },
+  { id: 'kids', label: 'Kids Zone', icon: '🎈' },
   { id: 'arcade', label: 'Arcade & Action', icon: '👾' },
   { id: 'classic', label: 'Retro Classics', icon: '🕹️' },
   { id: 'puzzle', label: 'Brain & Puzzles', icon: '🧩' }
