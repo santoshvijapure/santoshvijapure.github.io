@@ -1,15 +1,987 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santosh Vijapure | Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Santosh Vijapure, Senior Software Engineer with 5.5+ years of experience leading modernizations, scalable React architectures, and high-impact web platforms at Oportun, Airtel, and Betaflux." />
+  <meta name="keywords" content="Santosh Vijapure, Senior Software Engineer, Frontend Engineer, React, Next.js, TypeScript, Oportun, Airtel, Angular to React Modernization, Portfolio" />
+  <meta name="author" content="Santosh Vijapure" />
+  <meta name="theme-color" content="#080b11" />
 
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Santosh Vijapure | Senior Software Engineer" />
+  <meta property="og:description" content="5.5+ years experience building scalable systems at Oportun, Airtel (1M+ daily visits), and Betaflux. Specialized in React, Next.js, TypeScript, and Frontend Architecture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://santoshvijapure.github.io/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <script type="text/javascript">
-        window.location.href="./index/index.html";
-    </script>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Santosh Vijapure Home">
+        <div class="logo-symbol">SV</div>
+        <div class="brand-meta">
+          <span class="brand-name">Santosh Vijapure</span>
+          <span class="brand-role">Senior Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Systems & Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="navResumeBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span class="status-dot"></span>
+            <span>Senior Software Engineer &bull; 5.5+ Yrs Production Experience</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">Scalable React Systems</span> & High-Impact Modernizations.
+          </h1>
+
+          <p class="hero-description">
+            Senior Software Engineer currently driving multi-quarter Angular-to-React modernizations, cross-platform shared libraries, and high-conversion experiences at <strong>Oportun</strong>. Previously scaled digital acquisition and analytics platforms to <strong>1M+ daily visits</strong> at <strong>Airtel</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary" id="heroExpBtn">
+              <span>View Experience</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary" id="heroProjectsBtn">
+              <span>Explore Architecture & Impact</span>
+            </a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="heroResumeBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Pune, India (Remote / Hybrid)</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Oportun L.O.V.E &bull; Airtel ACE &bull; Google Explore ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-container">
+            <div class="avatar-glow-ring" aria-hidden="true"></div>
+            
+            <!-- Floating Badges -->
+            <div class="float-badge badge-top-left">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>Oportun &bull; Angular ➔ React</span>
+            </div>
+
+            <div class="avatar-card">
+              <div class="avatar-img-wrapper">
+                <img src="assets/avatar.jpg" alt="Santosh Vijapure" class="avatar-img" />
+              </div>
+              <h2 class="avatar-name">Santosh Vijapure</h2>
+              <p class="avatar-title">Senior Software Engineer</p>
+              <div class="avatar-location">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span>Frontend Architecture & Modernization</span>
+              </div>
+
+              <div class="avatar-stats-mini">
+                <div class="mini-stat">
+                  <span class="mini-stat-num">5.5+</span>
+                  <span class="mini-stat-label">Years Exp</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="mini-stat-num">+14.4%</span>
+                  <span class="mini-stat-label">Conv. Lift</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-badge badge-bottom-right">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>React &bull; TypeScript &bull; Observability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Impact Metrics Section -->
+    <section class="metrics-section" aria-label="Key Impact Metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-number" data-target="5.5" data-suffix="+">5.5+</span>
+            </div>
+            <h3 class="metric-label">Years of Experience</h3>
+            <p class="metric-detail">Across Oportun, Airtel, and Betaflux building resilient systems</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-number" data-target="14.4" data-prefix="+" data-suffix="%">+14.4%</span>
+            </div>
+            <h3 class="metric-label">Payment Conversion Lift</h3>
+            <p class="metric-detail">Achieved at Oportun alongside 18–23.8% higher CTR & 27% Tools enrollment</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-number" data-target="1" data-suffix="M+">1M+</span>
+            </div>
+            <h3 class="metric-label">Daily Visits Scaled</h3>
+            <p class="metric-detail">Managed across Airtel digital acquisitions and conversion flows</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-number" data-target="75" data-suffix="%">75%</span>
+            </div>
+            <h3 class="metric-label">Faster Debugging & Testing</h3>
+            <p class="metric-detail">From 2hrs down to 15-30m with New Relic, Session Replay & WDIO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>About & Philosophy</span>
+        </div>
+
+        <h2 class="section-heading">Engineering at the Intersection of <span class="gradient-text">Architecture & Business Impact</span>.</h2>
+        <p class="section-subheading">A comprehensive track record of leading large-scale frontend migrations, cross-platform shared libraries, and high-converting user funnels.</p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a <strong>Senior Software Engineer</strong> with over <strong>5.5 years of industry experience</strong> specializing in modernizing enterprise web ecosystems and architecting high-throughput frontend applications.
+            </p>
+            <p>
+              Currently at <strong>Oportun</strong>, I define technical migration roadmaps and lead multi-quarter migrations from legacy Angular to modern React architectures. My work centers on creating backward-compatible, shared business logic libraries that eliminate code duplication across web and mobile, re-architecting complex checkout and offer funnels (e.g., consolidating 13 APIs across 14 screens), and establishing production observability with New Relic, Session Replay, and automated WDIO testing.
+            </p>
+            <p>
+              Previously at <strong>Airtel</strong>, I managed user experiences processing over <strong>1 million daily visits</strong>, revamped an enterprise Customer Experience Management platform handling <strong>60,000+ daily cases</strong>, and developed a dynamic, config-driven analytics dashboard platform.
+            </p>
+          </div>
+
+          <div class="philosophy-stack">
+            <div class="philosophy-item">
+              <div class="phil-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="phil-content">
+                <h4>Modernization & Shared Architecture</h4>
+                <p>Architecting smooth transitions from legacy frameworks (Angular to React) with zero downtime and reusable cross-platform business libraries.</p>
+              </div>
+            </div>
+
+            <div class="philosophy-item">
+              <div class="phil-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <div class="phil-content">
+                <h4>Observability & Reliability (SLI/SLO)</h4>
+                <p>Establishing New Relic monitoring, proactive alerting, Session Replay, and funnel analytics to slash debugging time from hours to minutes.</p>
+              </div>
+            </div>
+
+            <div class="philosophy-item">
+              <div class="phil-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div class="phil-content">
+                <h4>Measurable Business Outcomes</h4>
+                <p>Delivering measurable growth: +14.4% payment conversion, 18-23.8% higher CTRs, and near 100% API success rates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <span>Professional History</span>
+        </div>
+
+        <h2 class="section-heading">Work <span class="gradient-text">Experience</span>.</h2>
+        <p class="section-subheading">5.5+ years of progression from engineer to leading frontend modernization and scalable systems.</p>
+
+        <div class="timeline-container">
+          
+          <!-- Experience 1: Oportun -->
+          <article class="timeline-card">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Senior Software Engineer</h3>
+                <div class="company-badge">
+                  <span>Oportun</span>
+                  <span style="color: var(--text-dim)">&bull;</span>
+                  <span style="color: var(--text-muted); font-size: 0.9rem;">Full-time &bull; Financial Services & Digital Lending</span>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">May 2024 &ndash; Present</span>
+                <span class="timeline-location">Remote &bull; India</span>
+              </div>
+            </div>
+
+            <ul class="experience-points">
+              <li>
+                <strong>Angular to React Modernization Roadmap:</strong> Defined the technical roadmap for a multi-quarter modernization, establishing the migration strategy, shared architecture, contribution guidelines, and engineering standards.
+              </li>
+              <li>
+                <strong>Tools Experience Migration:</strong> Led the migration of the Tools experience from Angular to React while maintaining complete backward compatibility and uninterrupted production stability.
+              </li>
+              <li>
+                <strong>Shared Cross-Platform Business Logic Library:</strong> Designed and authored a shared business logic library reused across web and mobile applications, eliminating duplicated effort and accelerating future feature delivery.
+              </li>
+              <li>
+                <strong>Single Best Offer (SBO) Re-Architecture:</strong> Re-architected the SBO experience across 14 screens by consolidating 13 API integrations and decoupling legacy backend dependencies.
+              </li>
+              <li>
+                <strong>Cross-Functional Modernization Leadership:</strong> Led initiatives across product, backend, design, and engineering teams, driving migration strategy, architecture alignment, and phased production rollouts.
+              </li>
+              <li>
+                <strong>Measurable Business Growth:</strong> Improved business outcomes with a <strong>14.4% increase in payment conversion</strong>, <strong>18&ndash;23.8% higher click-through rates</strong>, <strong>26&ndash;27% increase in Tools enrollment</strong>, and near 100% API success.
+              </li>
+              <li>
+                <strong>Observability & Observability SME:</strong> Implemented New Relic dashboards, Session Replay, funnel analytics, and proactive alerting, slashing debugging time from <strong>1&ndash;2 hours down to 15&ndash;30 minutes</strong>. Became the team's Subject Matter Expert (SME) for observability, analytics, and automation.
+              </li>
+              <li>
+                <strong>WDIO Automation:</strong> Restored WDIO test automation after modernization, cutting regression testing cycles from <strong>one full day to 1&ndash;2 hours</strong>.
+              </li>
+            </ul>
+
+            <div class="award-banner">
+              <div class="award-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <div class="award-text">
+                <strong>Recognition:</strong> Received the prestigious <strong>Oportun L.O.V.E Recognition</strong> for engineering leadership and exceptional platform modernization outcomes.
+              </div>
+            </div>
+
+            <div class="tech-tags-wrap">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Redux Toolkit</span>
+              <span class="tech-tag">Angular Migration</span>
+              <span class="tech-tag">Shared Libraries</span>
+              <span class="tech-tag">New Relic</span>
+              <span class="tech-tag">Session Replay</span>
+              <span class="tech-tag">WDIO</span>
+              <span class="tech-tag">SLI/SLO</span>
+            </div>
+          </article>
+
+          <!-- Experience 2: Airtel -->
+          <article class="timeline-card">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Software Engineer E1 &ndash; Frontend</h3>
+                <div class="company-badge">
+                  <span>Airtel</span>
+                  <span style="color: var(--text-dim)">&bull;</span>
+                  <span style="color: var(--text-muted); font-size: 0.9rem;">Full-time &bull; Telecommunications & Scale</span>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">Mar 2021 &ndash; Apr 2024</span>
+                <span class="timeline-location">Hybrid &bull; Pune, India</span>
+              </div>
+            </div>
+
+            <ul class="experience-points">
+              <li>
+                <strong>Customer Acquisition at Scale:</strong> Built and optimized customer acquisition web experiences serving over <strong>1 million daily visits</strong> with smooth checkout journeys.
+              </li>
+              <li>
+                <strong>Customer Experience Management (CEM) Platform:</strong> Built and enhanced Airtel Business CEM platform processing over <strong>60,000 customer cases daily</strong>.
+              </li>
+              <li>
+                <strong>Frontend Modernization:</strong> Contributed to platform-wide modernization through performance optimization, state management improvements, multi-tenant architecture, and security enhancements.
+              </li>
+              <li>
+                <strong>Configurable Analytics Dashboard Platform:</strong> Developed a dynamic, configurable analytics dashboard platform empowering business stakeholders to create custom visualizations without engineering assistance.
+              </li>
+              <li>
+                <strong>Mentorship:</strong> Mentored interns and incoming engineers through architecture discussions, structured code reviews, and technical guidance.
+              </li>
+            </ul>
+
+            <div class="award-banner">
+              <div class="award-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <div class="award-text">
+                <strong>Awards:</strong> Awarded the <strong>Airtel ACE Award</strong> for outstanding platform contributions and engineering excellence.
+              </div>
+            </div>
+
+            <div class="tech-tags-wrap">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Redux Toolkit</span>
+              <span class="tech-tag">Dynamic Dashboards</span>
+              <span class="tech-tag">Multi-Tenancy</span>
+              <span class="tech-tag">Jest</span>
+            </div>
+          </article>
+
+          <!-- Experience 3: Betaflux -->
+          <article class="timeline-card">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Associate Software Engineer &ndash; Frontend</h3>
+                <div class="company-badge">
+                  <span>Betaflux</span>
+                  <span style="color: var(--text-dim)">&bull;</span>
+                  <span style="color: var(--text-muted); font-size: 0.9rem;">Full-time &bull; Enterprise & Ed-Tech</span>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">Jul 2020 &ndash; Feb 2021</span>
+                <span class="timeline-location">Remote &bull; India</span>
+              </div>
+            </div>
+
+            <ul class="experience-points">
+              <li>
+                Built React and Next.js applications for warehousing and ed-tech products with rich interactive data grids.
+              </li>
+              <li>
+                Integrated secure payment workflows and designed SEO-optimized marketing pages with server-side rendering.
+              </li>
+              <li>
+                Optimized React runtime performance using lazy loading, code-splitting, and memoization, achieving <strong>Lighthouse scores above 90</strong>.
+              </li>
+            </ul>
+
+            <div class="tech-tags-wrap">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Payment Integrations</span>
+              <span class="tech-tag">Lighthouse 90+</span>
+            </div>
+          </article>
+
+          <!-- Education & Facilitator -->
+          <article class="timeline-card">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Education & Early Milestones</h3>
+                <div class="company-badge">
+                  <span>Pune University &bull; Google AI</span>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">2017 &ndash; 2020</span>
+                <span class="timeline-location">Pune, India</span>
+              </div>
+            </div>
+
+            <ul class="experience-points">
+              <li>
+                <strong>Bachelor of Engineering in Computer Science:</strong> Pune University (May 2017 &ndash; May 2020).
+              </li>
+              <li>
+                <strong>Google Explore ML Facilitator:</strong> Selected among <strong>60 students across India</strong> for Google’s Explore ML Facilitator program, conducting 3 sponsored technical ML workshops.
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <span>Technical Stack</span>
+        </div>
+
+        <h2 class="section-heading">Skills & <span class="gradient-text">Core Competencies</span>.</h2>
+        <p class="section-subheading">A comprehensive overview of technical tools, frameworks, and domain expertise.</p>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Frameworks & Libraries -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Frameworks & Libraries</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">React Native</span>
+              <span class="skill-pill">Next.js (SSR/SSG)</span>
+              <span class="skill-pill">Redux Toolkit</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">HTML5 Semantic</span>
+              <span class="skill-pill">CSS3 / Modern CSS</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Observability & Analytics -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Observability & Analytics</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-pill">New Relic</span>
+              <span class="skill-pill">Session Replay</span>
+              <span class="skill-pill">Funnel Analytics</span>
+              <span class="skill-pill">SLI / SLO Tracking</span>
+              <span class="skill-pill">Proactive Alerting</span>
+              <span class="skill-pill">Lighthouse Audits</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Testing & Automation -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Testing & Automation</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-pill">WDIO (WebdriverIO)</span>
+              <span class="skill-pill">Cypress E2E</span>
+              <span class="skill-pill">Jest</span>
+              <span class="skill-pill">Selenium</span>
+              <span class="skill-pill">React Testing Library</span>
+              <span class="skill-pill">Regression Automation</span>
+            </div>
+          </div>
+
+          <!-- Category 5: UI Libraries & Design Systems -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">UI Libraries & Design</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">Material UI (MUI)</span>
+              <span class="skill-pill">Ant Design</span>
+              <span class="skill-pill">Chakra UI</span>
+              <span class="skill-pill">Design Systems</span>
+              <span class="skill-pill">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Tooling & Workflow -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Tools & Collaboration</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-pill">Git / GitHub</span>
+              <span class="skill-pill">CI/CD Pipelines</span>
+              <span class="skill-pill">npm / Yarn</span>
+              <span class="skill-pill">Agile / Scrum</span>
+              <span class="skill-pill">English, Hindi</span>
+              <span class="skill-pill">Marathi, Kannada</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects & Architecture Systems -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>Architecture & Impact Cases</span>
+        </div>
+
+        <h2 class="section-heading">Featured <span class="gradient-text">Systems & Impact</span>.</h2>
+        <p class="section-subheading">Key architectural initiatives delivering measurable speed, scalability, and conversion lift.</p>
+
+        <div class="projects-grid">
+          
+          <!-- System 1: Angular to React Modernization (Oportun) -->
+          <article class="project-card" data-category="enterprise">
+            <div>
+              <div class="project-top-row">
+                <span class="project-category-badge">Modernization &bull; Oportun</span>
+                <span class="project-category-badge" style="background: rgba(99, 102, 241, 0.1); color: #a5b4fc; border-color: rgba(99, 102, 241, 0.25);">Multi-Quarter</span>
+              </div>
+
+              <h3 class="project-title">Angular to React Modernization & Shared Architecture</h3>
+              <p class="project-desc">
+                Defined the overarching technical roadmap for transitioning Oportun's core web application from AngularJS to modern React. Established migration patterns, backward-compatibility layers, shared business logic libraries reused across web & mobile, and seamless rollout planning.
+              </p>
+
+              <div class="project-metrics-callout">
+                <strong>Key Results:</strong> +14.4% payment conversion lift, 26-27% Tools enrollment increase, and zero production regressions during cutover.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Angular Migration</span>
+              <span class="tech-tag">Shared Libraries</span>
+              <span class="tech-tag">Cross-Platform</span>
+            </div>
+          </article>
+
+          <!-- System 2: Single Best Offer (SBO) Re-Architecture (Oportun) -->
+          <article class="project-card" data-category="enterprise">
+            <div>
+              <div class="project-top-row">
+                <span class="project-category-badge">High Conversion &bull; Oportun</span>
+                <span class="project-category-badge" style="background: rgba(16, 185, 129, 0.1); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.25);">14 Screens &bull; 13 APIs</span>
+              </div>
+
+              <h3 class="project-title">Single Best Offer (SBO) Funnel Consolidation</h3>
+              <p class="project-desc">
+                Completely re-architected Oportun's high-stakes Single Best Offer (SBO) flow spanning 14 interactive screens. Consolidated 13 disparate API integrations, decoupled legacy backend bottlenecks, and rebuilt the checkout experience for instant responsiveness.
+              </p>
+
+              <div class="project-metrics-callout">
+                <strong>Key Results:</strong> 18&ndash;23.8% higher click-through rates, near 100% API call success rate, and enhanced customer satisfaction.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Redux Toolkit</span>
+              <span class="tech-tag">API Consolidation</span>
+              <span class="tech-tag">Conversion Rate Optimization</span>
+            </div>
+          </article>
+
+          <!-- System 3: Observability & WDIO Automation Suite (Oportun) -->
+          <article class="project-card" data-category="enterprise">
+            <div>
+              <div class="project-top-row">
+                <span class="project-category-badge">Observability & SME &bull; Oportun</span>
+                <span class="project-category-badge" style="background: rgba(6, 182, 212, 0.1); color: #38bdf8; border-color: rgba(6, 182, 212, 0.25);">New Relic & WDIO</span>
+              </div>
+
+              <h3 class="project-title">End-to-End Observability, Session Replay & Testing Suite</h3>
+              <p class="project-desc">
+                Architected comprehensive New Relic dashboards, Session Replay tracking, funnel analytics, and SLI/SLO monitors. Authored team-wide architecture documentation and restored the automated WDIO testing suite post-modernization.
+              </p>
+
+              <div class="project-metrics-callout">
+                <strong>Key Results:</strong> Slashed debugging turnaround from 1-2 hours to 15-30 mins; regression testing dropped from 1 full day to 1-2 hours.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">New Relic</span>
+              <span class="tech-tag">Session Replay</span>
+              <span class="tech-tag">WDIO</span>
+              <span class="tech-tag">SLI/SLO</span>
+              <span class="tech-tag">Funnel Analytics</span>
+            </div>
+          </article>
+
+          <!-- System 4: Airtel Acquisitions Engine (Airtel) -->
+          <article class="project-card" data-category="enterprise">
+            <div>
+              <div class="project-top-row">
+                <span class="project-category-badge">High Traffic (1M+ DAU) &bull; Airtel</span>
+                <span class="project-category-badge" style="background: rgba(245, 158, 11, 0.1); color: #fde68a; border-color: rgba(245, 158, 11, 0.25);">Scale Engine</span>
+              </div>
+
+              <h3 class="project-title">High-Traffic Digital Acquisitions Platform</h3>
+              <p class="project-desc">
+                Managed high-volume customer acquisition pages serving over 1 million daily visits. Delivered seamless user journeys, conversion-optimized checkout funnels, and sub-second page loads across thousands of varying mobile device profiles.
+              </p>
+
+              <div class="project-metrics-callout">
+                <strong>Key Results:</strong> 1M+ daily visits; rock-solid Core Web Vitals and resilient uptime during high-volume digital campaigns.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Performance Tuning</span>
+              <span class="tech-tag">High Scale</span>
+            </div>
+          </article>
+
+          <!-- System 5: Config-Driven Analytics Builder (Airtel) -->
+          <article class="project-card" data-category="enterprise">
+            <div>
+              <div class="project-top-row">
+                <span class="project-category-badge">Config-Driven UI &bull; Airtel</span>
+                <span class="project-category-badge" style="background: rgba(99, 102, 241, 0.1); color: #a5b4fc; border-color: rgba(99, 102, 241, 0.25);">Self-Serve</span>
+              </div>
+
+              <h3 class="project-title">Configurable Analytics Dashboard Platform</h3>
+              <p class="project-desc">
+                Engineered a dynamic dashboard builder engine accommodating diverse chart types and configurable multi-level filters, empowering business users and product owners to generate analytical dashboards on-demand without writing code.
+              </p>
+
+              <div class="project-metrics-callout">
+                <strong>Key Results:</strong> Eliminated developer dependency for reporting dashboards; reduced dashboard time-to-market from weeks to minutes.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">JSON Schema UI</span>
+              <span class="tech-tag">Chart Engine</span>
+            </div>
+          </article>
+
+          <!-- System 6: Airtel Business CEM Platform -->
+          <article class="project-card" data-category="enterprise">
+            <div>
+              <div class="project-top-row">
+                <span class="project-category-badge">Enterprise Multi-Tenant &bull; Airtel Business</span>
+                <span class="project-category-badge" style="background: rgba(16, 185, 129, 0.1); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.25);">60,000+ Cases/Day</span>
+              </div>
+
+              <h3 class="project-title">Customer Experience Management (CEM) Platform</h3>
+              <p class="project-desc">
+                Modernized the Airtel Business CEM platform processing 60,000+ cases daily across Email and Social channels. Upgraded state management, implemented strict security controls, and introduced multi-tenant enterprise support.
+              </p>
+
+              <div class="project-metrics-callout">
+                <strong>Key Results:</strong> Robust real-time messaging, multi-channel case routing, and recipient of the Airtel ACE Award.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Multi-Tenancy</span>
+              <span class="tech-tag">State Management</span>
+              <span class="tech-tag">Security</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-content">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Get in Touch</span>
+            </div>
+
+            <h2 class="contact-heading">Let's Build Something <span class="gradient-text">Extraordinary</span> Together.</h2>
+            <p class="contact-desc">
+              Whether you are looking for a Senior Software Engineer to lead frontend modernization, architect scalable React systems, or consult on frontend performance, my inbox is always open.
+            </p>
+
+            <div class="contact-actions">
+              <!-- One-Click Copy Email Box -->
+              <div class="copy-email-box" data-email="vijapuresantosh@gmail.com" title="Click to copy email address" id="copyEmailBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>vijapuresantosh@gmail.com</span>
+              </div>
+
+              <!-- Phone Call / Link -->
+              <a href="tel:+917709141381" class="btn btn-secondary" id="phoneCallBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 7709141381</span>
+              </a>
+
+              <!-- Direct Mailto -->
+              <a href="mailto:vijapuresantosh@gmail.com" class="btn btn-primary" id="sendEmailBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Email</span>
+              </a>
+
+              <!-- Direct Resume Link -->
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="contactResumeBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+            </div>
+
+            <!-- Social Dock -->
+            <div class="social-dock">
+              <a href="https://github.com/santoshvijapure" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/santoshvijapure/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com/sant0shvijapure" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Twitter / X Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://medium.com/@santoshvijapure" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Medium Articles">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>&copy; 2026 Santosh Vijapure &bull; Senior Software Engineer</p>
+        <p style="font-size: 0.8rem; color: var(--text-dim);">Engineered with Semantic HTML5, Modern CSS Design System &amp; Vanilla ES6+ JavaScript.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="footer-link">Back to Top &uarr;</a>
+        <a href="https://github.com/santoshvijapure/santoshvijapure.github.io" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Pages Repo</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span class="toast-msg">Email address copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
