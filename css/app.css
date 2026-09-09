@@ -702,7 +702,8 @@ body {
 #arcadeCanvas,
 #snakeCanvas,
 #balloonCanvas,
-#dinoCanvas {
+#dinoCanvas,
+#algoCanvas {
   width: 100%;
   max-width: 650px;
   height: auto;
@@ -993,6 +994,21 @@ body {
 .arcade-cabinet-frame:fullscreen #gridlockViewport,
 :fullscreen #gridlockViewport {
   height: 42vh !important;
+}
+
+/* Algo Dungeon in Fullscreen */
+.arcade-cabinet-frame.is-fullscreen #algoCanvas,
+.arcade-cabinet-frame:fullscreen #algoCanvas,
+:fullscreen #algoCanvas {
+  max-width: 95vw !important;
+  max-height: 92vh !important;
+  height: auto !important;
+  width: 90vw !important;
+  aspect-ratio: 700 / 520 !important;
+  object-fit: contain !important;
+  margin: auto !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 50px rgba(99, 102, 241, 0.45) !important;
 }
 
 @keyframes shake {

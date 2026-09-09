@@ -47,6 +47,10 @@ window.GamePlayer = function ({ gameId, onBack }) {
       gameInstanceRef.current = window.createCssGridlockGame('cssGridlockMount', (newScore) => {
         setScore(newScore);
       });
+    } else if (gameId === 'algo-dungeon' && window.createAlgoDungeonGame) {
+      gameInstanceRef.current = window.createAlgoDungeonGame('algoCanvas', (newScore) => {
+        setScore(newScore);
+      });
     }
 
     return () => {
@@ -206,7 +210,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
             React.createElement('span', { style: { marginRight: '5px' } }, isFullscreen ? '✕' : '⛶'),
             isFullscreen ? 'Exit Fullscreen' : 'Full Screen'
           ),
-          (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump' || gameId === 'regex-racer' || gameId === 'css-gridlock') &&
+          (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump' || gameId === 'regex-racer' || gameId === 'css-gridlock' || gameId === 'algo-dungeon') &&
             React.createElement(
               'button',
               { className: 'btn btn-ghost btn-sm', onClick: handleToggleSound },
@@ -232,7 +236,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
           React.createElement(
             'div',
             { className: 'floating-fs-toolbar' },
-            (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump' || gameId === 'regex-racer' || gameId === 'css-gridlock') &&
+            (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump' || gameId === 'regex-racer' || gameId === 'css-gridlock' || gameId === 'algo-dungeon') &&
               React.createElement(
                 'button',
                 {
@@ -287,7 +291,9 @@ window.GamePlayer = function ({ gameId, onBack }) {
           gameId === 'regex-racer' &&
             React.createElement('div', { id: 'regexRacerMount', style: { width: '100%' } }),
           gameId === 'css-gridlock' &&
-            React.createElement('div', { id: 'cssGridlockMount', style: { width: '100%' } })
+            React.createElement('div', { id: 'cssGridlockMount', style: { width: '100%' } }),
+          gameId === 'algo-dungeon' &&
+            React.createElement('canvas', { id: 'algoCanvas' })
         ),
 
         // Virtual Touch Controls

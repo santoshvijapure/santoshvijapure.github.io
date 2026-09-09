@@ -121,15 +121,15 @@ window.GAMES_REGISTRY = [
     id: 'algo-dungeon',
     title: 'Algo Dungeon: Big-O Crawler',
     category: 'arcade',
-    badge: 'Coming Soon',
-    tagline: 'Dungeon crawler powered by sorting and graph traversal algorithms.',
+    badge: 'Algorithm RPG',
+    tagline: 'Cyber-fantasy dungeon crawler powered by algorithms and data structures!',
     icon: '⚔️',
     difficulty: 'Expert',
-    status: 'upcoming',
-    rating: 'Preview',
-    tags: ['Algorithms', 'Dungeon Crawler', 'Data Structures'],
-    controls: 'Keyboard & Inventory',
-    description: 'In active development! Defeat O(N^2) complexity monsters using optimal O(N log N) spells and binary search teleports.'
+    status: 'playable',
+    rating: '5.0 ★',
+    tags: ['Algorithms', 'Dungeon Crawler', 'Big-O', 'Data Structures', 'Boss Fight'],
+    controls: '[W/A/S/D] Move • [1-4] Cast Spells (Binary Search, Hash Strike, Merge Sort, DP Shield) • [Space] Quick Cast.',
+    description: 'Explore the Memory Heap dungeon as an Algo Wizard! Slay O(N²) Nested Loop Slimes and the terrifying O(2ⁿ) Exponential Monolith Boss using real algorithmic spells: O(log N) Binary Search Lasers, O(1) Hash Table Teleports, and Memoization Shields.'
   }
 ];
 
