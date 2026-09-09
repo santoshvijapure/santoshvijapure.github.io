@@ -58,6 +58,10 @@
 
       <!-- Nav CTA & Mobile Hamburger -->
       <div class="nav-actions">
+        <button class="btn-arcade-nav trigger-arcade-game" id="navArcadeBtn" title="Play Code Defender Mini Game">
+          🕹️ <span>Arcade Mode</span>
+        </button>
+
         <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="navResumeBtn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -106,8 +110,11 @@
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <a href="#projects" class="btn btn-secondary" id="heroProjectsBtn">
-              <span>Explore Architecture & Impact</span>
+            <button class="btn btn-secondary trigger-arcade-game" id="heroArcadeBtn">
+              <span>🕹️ Play Mini Game</span>
+            </button>
+            <a href="#projects" class="btn btn-ghost" id="heroProjectsBtn">
+              <span>Explore Architecture</span>
             </a>
             <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="heroResumeBtn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -981,7 +988,47 @@
     <span class="toast-msg">Email address copied to clipboard!</span>
   </div>
 
+  <!-- Retro Arcade Game Modal -->
+  <div class="arcade-modal" id="arcadeModal" role="dialog" aria-modal="true" aria-label="Code Defender Game">
+    <div class="arcade-cabinet">
+      <div class="arcade-cabinet-header">
+        <div class="arcade-title-group">
+          <span class="arcade-led"></span>
+          <span class="arcade-cabinet-title">🕹️ CODE DEFENDER : PRODUCTION PANIC</span>
+        </div>
+        <div class="arcade-header-actions">
+          <button class="arcade-btn-icon" id="arcadeSoundToggle" aria-label="Toggle Sound">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            Sound On
+          </button>
+          <button class="arcade-btn-close" id="closeArcadeBtn" aria-label="Close Arcade Modal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="arcade-screen-wrap">
+        <canvas id="arcadeCanvas"></canvas>
+      </div>
+
+      <div class="arcade-controls-bar">
+        <span>Controls: [A]/[D] or [Arrows] Move &bull; [Space] Shoot &bull; [P] Pause &bull; [Esc] Close</span>
+      </div>
+
+      <!-- Virtual Touch D-Pad for Mobile -->
+      <div class="virtual-touch-controls">
+        <div class="touch-dpad">
+          <button class="touch-btn" id="touchLeft" aria-label="Move Left">&larr;</button>
+          <button class="touch-btn" id="touchRight" aria-label="Move Right">&rarr;</button>
+        </div>
+        <button class="touch-fire" id="touchFire" aria-label="Shoot Laser">FIRE</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Main JavaScript -->
   <script src="js/main.js"></script>
+  <!-- Arcade Game Script -->
+  <script src="js/game.js"></script>
 </body>
 </html>
