@@ -39,6 +39,14 @@ window.GamePlayer = function ({ gameId, onBack }) {
       gameInstanceRef.current = window.createDinoJumpGame('dinoCanvas', (newScore) => {
         setScore(newScore);
       });
+    } else if (gameId === 'regex-racer' && window.createRegexRacerGame) {
+      gameInstanceRef.current = window.createRegexRacerGame('regexRacerMount', (newScore) => {
+        setScore(newScore);
+      });
+    } else if (gameId === 'css-gridlock' && window.createCssGridlockGame) {
+      gameInstanceRef.current = window.createCssGridlockGame('cssGridlockMount', (newScore) => {
+        setScore(newScore);
+      });
     }
 
     return () => {
@@ -198,7 +206,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
             React.createElement('span', { style: { marginRight: '5px' } }, isFullscreen ? '✕' : '⛶'),
             isFullscreen ? 'Exit Fullscreen' : 'Full Screen'
           ),
-          (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump') &&
+          (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump' || gameId === 'regex-racer' || gameId === 'css-gridlock') &&
             React.createElement(
               'button',
               { className: 'btn btn-ghost btn-sm', onClick: handleToggleSound },
@@ -224,7 +232,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
           React.createElement(
             'div',
             { className: 'floating-fs-toolbar' },
-            (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump') &&
+            (gameId === 'code-defender' || gameId === 'balloon-pop' || gameId === 'dino-jump' || gameId === 'regex-racer' || gameId === 'css-gridlock') &&
               React.createElement(
                 'button',
                 {
@@ -275,7 +283,11 @@ window.GamePlayer = function ({ gameId, onBack }) {
           gameId === 'balloon-pop' &&
             React.createElement('canvas', { id: 'balloonCanvas' }),
           gameId === 'dino-jump' &&
-            React.createElement('canvas', { id: 'dinoCanvas' })
+            React.createElement('canvas', { id: 'dinoCanvas' }),
+          gameId === 'regex-racer' &&
+            React.createElement('div', { id: 'regexRacerMount', style: { width: '100%' } }),
+          gameId === 'css-gridlock' &&
+            React.createElement('div', { id: 'cssGridlockMount', style: { width: '100%' } })
         ),
 
         // Virtual Touch Controls
