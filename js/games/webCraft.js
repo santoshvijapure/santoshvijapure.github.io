@@ -186,7 +186,7 @@ window.createWebCraftGame = function (containerId, onScoreUpdate, onGameOver) {
 
   // Setup DOM Elements
   container.innerHTML = `
-    <div class="webcraft-container" style="position: relative; width: 100%; height: 560px; overflow: hidden; background: #87ceeb; border-radius: 14px;">
+    <div class="webcraft-container" style="position: relative; width: 100%; height: 100%; min-height: 560px; overflow: hidden; background: #87ceeb; border-radius: 14px;">
       <div id="webcraftViewport" style="width: 100%; height: 100%;"></div>
 
       <!-- Center Crosshair -->

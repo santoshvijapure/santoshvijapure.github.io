@@ -8,8 +8,10 @@ window.GamePlayer = function ({ gameId, onBack }) {
   const [score, setScore] = React.useState(0);
   const [isMuted, setIsMuted] = React.useState(false);
   const [isPaused, setIsPaused] = React.useState(false);
+  const [isFullscreen, setIsFullscreen] = React.useState(false);
 
   const gameInstanceRef = React.useRef(null);
+  const cabinetRef = React.useRef(null);
 
   React.useEffect(() => {
     // Mount selected game
@@ -58,6 +60,89 @@ window.GamePlayer = function ({ gameId, onBack }) {
     }
   };
 
+  const handleToggleFullscreen = () => {
+    const cabinet = cabinetRef.current;
+    const isCurrentlyFs = !!(
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement ||
+      isFullscreen
+    );
+
+    if (!isCurrentlyFs) {
+      if (cabinet) {
+        if (cabinet.requestFullscreen) {
+          cabinet.requestFullscreen().catch(() => {});
+        } else if (cabinet.webkitRequestFullscreen) {
+          cabinet.webkitRequestFullscreen();
+        } else if (cabinet.mozRequestFullScreen) {
+          cabinet.mozRequestFullScreen();
+        } else if (cabinet.msRequestFullscreen) {
+          cabinet.msRequestFullscreen();
+        }
+      }
+      setIsFullscreen(true);
+    } else {
+      if (document.exitFullscreen && document.fullscreenElement) {
+        document.exitFullscreen().catch(() => {});
+      } else if (document.webkitExitFullscreen && document.webkitFullscreenElement) {
+        document.webkitExitFullscreen();
+      } else if (document.mozCancelFullScreen && document.mozFullScreenElement) {
+        document.mozCancelFullScreen();
+      } else if (document.msExitFullscreen && document.msFullscreenElement) {
+        document.msExitFullscreen();
+      }
+      setIsFullscreen(false);
+    }
+
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 80);
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 250);
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 500);
+  };
+
+  React.useEffect(() => {
+    const handleFsChange = () => {
+      const isNowFs = !!(
+        document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.mozFullScreenElement ||
+        document.msFullscreenElement
+      );
+      setIsFullscreen(isNowFs);
+      setTimeout(() => window.dispatchEvent(new Event('resize')), 80);
+      setTimeout(() => window.dispatchEvent(new Event('resize')), 250);
+      setTimeout(() => window.dispatchEvent(new Event('resize')), 500);
+    };
+
+    const events = ['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'MSFullscreenChange'];
+    events.forEach((evt) => document.addEventListener(evt, handleFsChange));
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isFullscreen && !document.fullscreenElement) {
+        setIsFullscreen(false);
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      events.forEach((evt) => document.removeEventListener(evt, handleFsChange));
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isFullscreen]);
+
+  React.useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isFullscreen]);
+
   if (!game) {
     return React.createElement(
       'div',
@@ -73,7 +158,7 @@ window.GamePlayer = function ({ gameId, onBack }) {
 
   return React.createElement(
     'div',
-    { className: 'arcade-player-view' },
+    { className: `arcade-player-view ${isFullscreen ? 'view-fullscreen' : ''}` },
     React.createElement(
       'div',
       { className: 'container' },
@@ -95,6 +180,16 @@ window.GamePlayer = function ({ gameId, onBack }) {
         React.createElement(
           'div',
           { className: 'player-actions' },
+          React.createElement(
+            'button',
+            {
+              className: 'btn btn-primary btn-sm btn-fullscreen-toggle',
+              onClick: handleToggleFullscreen,
+              title: isFullscreen ? 'Exit Full Screen Mode' : 'Enter Full Screen Mode'
+            },
+            React.createElement('span', { style: { marginRight: '5px' } }, isFullscreen ? '✕' : '⛶'),
+            isFullscreen ? 'Exit Fullscreen' : 'Full Screen'
+          ),
           gameId === 'code-defender' &&
             React.createElement(
               'button',
@@ -112,13 +207,57 @@ window.GamePlayer = function ({ gameId, onBack }) {
       // Arcade Machine Cabinet Frame
       React.createElement(
         'div',
-        { className: 'arcade-cabinet-frame' },
+        {
+          ref: cabinetRef,
+          className: `arcade-cabinet-frame ${isFullscreen ? 'is-fullscreen' : ''}`
+        },
+        // Floating Fullscreen Toolbar HUD (Visible when Fullscreen)
+        isFullscreen &&
+          React.createElement(
+            'div',
+            { className: 'floating-fs-toolbar' },
+            gameId === 'code-defender' &&
+              React.createElement(
+                'button',
+                {
+                  className: 'floating-fs-tool-btn',
+                  onClick: handleToggleSound,
+                  title: isMuted ? 'Unmute' : 'Mute'
+                },
+                isMuted ? '🔇 Unmute' : '🔊 Sound'
+              ),
+            React.createElement(
+              'button',
+              {
+                className: 'floating-fs-tool-btn',
+                onClick: handleRestart,
+                title: 'Restart Game'
+              },
+              '🔄 Restart'
+            ),
+            React.createElement(
+              'button',
+              {
+                className: 'floating-fs-tool-btn floating-fs-exit-btn',
+                onClick: handleToggleFullscreen,
+                title: 'Exit Full Screen (Esc)'
+              },
+              React.createElement('span', null, '✕ Exit Full Screen'),
+              React.createElement('kbd', { className: 'fs-kbd' }, 'ESC')
+            )
+          ),
+
         React.createElement(
           'div',
           { className: 'cabinet-screen-wrapper' },
           // Game Canvas/Container selection
           gameId === 'web-craft' &&
-            React.createElement('div', { id: 'webcraftMount', style: { width: '100%', height: '560px' } }),
+            React.createElement('div', {
+              id: 'webcraftMount',
+              style: isFullscreen
+                ? { width: '100vw', height: '100vh' }
+                : { width: '100%', height: '560px' }
+            }),
           gameId === 'code-defender' &&
             React.createElement('canvas', { id: 'arcadeCanvas' }),
           gameId === 'dev-snake' &&
