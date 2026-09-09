@@ -6,6 +6,20 @@
 
 window.GAMES_REGISTRY = [
   {
+    id: 'web-craft',
+    title: 'WebCraft 3D: Minecraft Edition',
+    category: 'arcade',
+    badge: '3D Voxel Sandbox',
+    tagline: 'Explore, mine, and build in a 3D procedural voxel sandbox world.',
+    icon: '⛏️',
+    difficulty: 'Sandbox',
+    status: 'playable',
+    rating: '5.0 ★',
+    tags: ['Three.js', '3D Voxel', 'Minecraft Web', 'First-Person', 'Building'],
+    controls: '[Click to Lock Pointer] • [W/A/S/D] Walk • [Space] Jump • [Left-Click] Mine • [Right-Click] Place • [1-7] Hotbar',
+    description: 'A real first-person 3D voxel sandbox inspired by Minecraft! Explore procedural hills, oak trees, and clouds. Mine blocks with cracking sounds, place bricks, wood, TNT, and glass with 7 selectable hotbar materials.'
+  },
+  {
     id: 'code-defender',
     title: 'Code Defender: Production Panic',
     category: 'arcade',

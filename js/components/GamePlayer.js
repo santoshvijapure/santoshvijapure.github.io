@@ -13,7 +13,11 @@ window.GamePlayer = function ({ gameId, onBack }) {
 
   React.useEffect(() => {
     // Mount selected game
-    if (gameId === 'code-defender' && window.createCodeDefenderGame) {
+    if (gameId === 'web-craft' && window.createWebCraftGame) {
+      gameInstanceRef.current = window.createWebCraftGame('webcraftMount', (newScore) => {
+        setScore(newScore);
+      });
+    } else if (gameId === 'code-defender' && window.createCodeDefenderGame) {
       gameInstanceRef.current = window.createCodeDefenderGame('arcadeCanvas', (newScore) => {
         setScore(newScore);
       });
@@ -113,6 +117,8 @@ window.GamePlayer = function ({ gameId, onBack }) {
           'div',
           { className: 'cabinet-screen-wrapper' },
           // Game Canvas/Container selection
+          gameId === 'web-craft' &&
+            React.createElement('div', { id: 'webcraftMount', style: { width: '100%', height: '560px' } }),
           gameId === 'code-defender' &&
             React.createElement('canvas', { id: 'arcadeCanvas' }),
           gameId === 'dev-snake' &&
